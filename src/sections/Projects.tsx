@@ -14,7 +14,7 @@ const projects = [
     title: "Binaryburst Solutions",
     description:
       "A professional IT solutions platform providing services such as cybersecurity, cloud infrastructure, and managed IT support, designed to simplify complex technology and deliver reliable business solutions.",
-    image: "/projects/binaryburstsolutions.png",
+    image: "/projects/binaryburst.png",
     tags: ["React", "Typescript", "Tailwind CSS"],
     link: "https://binaryburstsolutions.com/",
   },
@@ -44,6 +44,9 @@ const projects = [
   },
 ];
 
+const getImagePath = (path: string) => {
+  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+};
 export const Projects = () => {
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
@@ -79,7 +82,7 @@ export const Projects = () => {
             >
               <div className="relative overflow-hidden aspect-video">
                 <img
-                  src={project.image}
+                  src={getImagePath(project.image)}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

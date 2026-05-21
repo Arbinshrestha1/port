@@ -13,6 +13,8 @@ const skills = [
   "Wordpress",
 ];
 
+const base = import.meta.env.BASE_URL;
+
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -109,7 +111,7 @@ export const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/img1.jpg"
+                  src={`${base}img1.jpg`}
                   alt="profile picture"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
