@@ -30,7 +30,7 @@ const projects = [
     title: "RoversNepal",
     description:
       "A travel agency website showcasing services like hotel bookings, tours, etc.",
-    image: "/projects/roversnepal.png",
+    image: "/projects/roversnepal.jpeg",
     tags: ["React", "Typescript", "React Query", "Tailwind CSS"],
     link: "http://roversnepal.com/",
   },
@@ -38,7 +38,7 @@ const projects = [
     title: "Vehicle Number Plate Detection",
     description:
       "An Automatic Number Plate Recognition system that detects vehicle number plates using YOLOv8 and recognizes characters using a custom CNN model. Integrated with a FastAPI web application where users can upload images or videos and get recognized plate numbers in real time.",
-    image: "/projects/numberplate.png",
+    image: "/projects/numberplate.jpeg",
     tags: ["React", "Typescript", "React Query", "Tailwind CSS"],
     link: "https://github.com/Arbin13",
   },
